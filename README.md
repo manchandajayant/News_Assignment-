@@ -1,4 +1,4 @@
-webpage live [here](football-news-app.netlify.app)
+webpage live [here](https://football-news-app.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
