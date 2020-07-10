@@ -15,3 +15,22 @@ img {
 .card:hover {
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.5) !important;
 }
+
+.card-body {
+  padding: 3rem 0 !important;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  padding: 0.4rem 1.9rem;
+}
+
+.card-group {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.card-body {
+  font-size: medium !important;
+  font-weight: 10 !important;
+}

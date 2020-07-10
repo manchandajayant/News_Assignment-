@@ -19,7 +19,7 @@ const Layout = (props) => {
         <div className="card-body text dark">
           <h4 className="card-title">{title}</h4>
         </div>
-        <p className="card-text text-secondary">{description}</p>
+        <p className="card-text text-secondary ">{description}</p>
         <a href={url} className="btn btn-outline" target="_empty">
           Go to the Article
         </a>

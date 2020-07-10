@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
 import Layout from "./Layout";
 const API_KEY = `${process.env.REACT_APP_NEWS_API_KEY}`;
 console.log(API_KEY);
@@ -30,7 +29,16 @@ const NewsFetched = () => {
   } else {
     return (
       <div>
-        <h5>Your Daily Football News Updates</h5>
+        <nav
+          className="navbar navbar-light bg-light"
+          style={{
+            boxShadow: "5px 5px 20px 1px rgba(0, 0, 0, 0.5)",
+            display: "flex",
+            justifyContent: "Center",
+          }}
+        >
+          <span className="navbar-brand mb-0 h1">FootBall News</span>
+        </nav>
         <div className="container-fluid d-flex justify-content-center">
           <div className="row">{articleCard}</div>
         </div>
