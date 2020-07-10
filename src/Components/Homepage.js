@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Layout from "./Layout";
+
 const API_KEY = `${process.env.REACT_APP_NEWS_API_KEY}`;
-console.log(API_KEY);
+
 const NewsFetched = () => {
   const [data, setdata] = useState([]);
 
