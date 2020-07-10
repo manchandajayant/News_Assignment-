@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import { Card, Button } from "react-bootstrap";
 const NewsFetched = () => {
   const [data, setdata] = useState([]);
 
@@ -22,7 +22,15 @@ const NewsFetched = () => {
     return (
       <div>
         {data.map((article, index) => (
-          <h1 key={index}>{article.title}</h1>
+          <Card style={{ width: "18rem" }} key={index}>
+            <Card.Text>{article.description}</Card.Text>
+            <Card.Img variant="top" src={article.urlToImage} />
+            <Card.Body>
+              <Card.Title>{article.title}</Card.Title>
+
+              <Button variant="primary">Go to the Article</Button>
+            </Card.Body>
+          </Card>
         ))}
       </div>
     );
