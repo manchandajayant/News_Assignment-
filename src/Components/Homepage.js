@@ -10,7 +10,7 @@ const NewsFetched = () => {
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
-        `http://newsapi.org/v2/everything?q=football&from=2020-07-09&sortBy=publishedAt&apiKey=${API_KEY}`
+        `https://newsapi.org/v2/everything?q=football&from=2020-07-09&sortBy=publishedAt&apiKey=${API_KEY}`
       );
 
       //console.log("res", result);
