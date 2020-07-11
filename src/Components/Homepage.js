@@ -10,7 +10,7 @@ const NewsFetched = () => {
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
-        `https://newsapi.org/v2/everything?q=football&from=2020-07-09&sortBy=publishedAt&apiKey=${API_KEY}`
+        `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?q=football&from=2020-07-09&sortBy=publishedAt&apiKey=${API_KEY}`
       );
 
       //console.log("res", result);
